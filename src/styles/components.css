@@ -1,0 +1,411 @@
+.category-button-container {
+  background-color: white;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.categorySection .category-container {
+  position: absolute;
+  width: 90%;
+  transition: 0.2s all ease-in-out;
+  bottom: -500px;
+  right: 10px;
+  transition: 0.2s all ease-in-out;
+}
+
+.categorySection .category-container.true {
+  opacity: 1;
+  bottom: 80%;
+}
+
+.category-button-container h5 {
+  font-size: 15px;
+  background-color: #89898969;
+  padding: 10px;
+}
+.category-button-container .category-trending-section ul {
+  padding: 5px 30px;
+  list-style-type: square;
+}
+.category-button-container a {
+  color: rgba(0, 0, 0, 0.619);
+  cursor: pointer;
+  &:hover {
+    color: black;
+    color: #000000dc;
+  }
+}
+.category-button-container .features-sports-section ul {
+  padding: 5px 10px;
+}
+
+.category-button-container .features-sports-section ul li {
+  padding: 5px 0;
+}
+.category-button-container .features-sports-section ul li ~ li {
+  border-top: 1px solid rgba(0, 0, 0, 0.418);
+}
+/* .category-button-container .trending-section ul {
+  list-style-type: square;
+} */
+
+/*---------------------------------------------------------------------------- header  */
+header {
+  background-color: #272727;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  height: 70px;
+  position: relative;
+  z-index: 99;
+}
+header nav a,
+header nav .category-nav {
+  cursor: pointer;
+  color: white;
+  &:hover {
+    color: #ffde00;
+  }
+}
+
+header .header-bg {
+  width: 100vw;
+  height: 70px;
+  position: absolute;
+  background-color: #272727;
+  left: 0;
+  z-index: 1;
+}
+
+header img,
+footer .footer1 > img {
+  width: 100px;
+  position: relative;
+  z-index: 999;
+}
+header nav,
+footer nav {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  z-index: 999;
+}
+
+footer nav {
+  align-items: center;
+}
+header .header-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+  position: relative;
+  z-index: 999;
+}
+header input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: black;
+  width: 100px;
+}
+header .menu {
+  display: none;
+  position: relative;
+  z-index: 999;
+}
+
+header .all-category-header {
+  position: absolute;
+  left: 40%;
+  z-index: 99;
+  top: 55%;
+  transition: 0.3s all ease-in-out;
+  display: none;
+}
+
+header .all-category-header.true {
+  opacity: 1;
+  display: block;
+}
+
+/*------------------------------------------------------------------------ hero-section  */
+.hero-section {
+  border-top: 5px solid #ffde00;
+  width: 100vw;
+  height: calc(100vh - 70px);
+}
+.hero-section .about-section {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  color: white;
+}
+
+.hero-section h1 {
+  text-transform: uppercase;
+  font-size: 4vw;
+}
+.heroSection .swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: absolute;
+  left: 40px;
+  width: fit-content;
+  gap: 40px;
+  bottom: 14vw;
+}
+.heroSection .swiper-pagination-bullet {
+  border: 2px solid white;
+  color: white;
+  height: 40px;
+  width: 40px;
+  opacity: 1;
+  place-content: center;
+  background-color: rgba(0, 0, 0, 0.34);
+}
+
+.heroSection .swiper-pagination-bullet-active {
+  display: inline-block;
+  border: 2px solid orange;
+}
+
+/* -------------------------------------------------------------------------trending section  */
+.tending-news-card {
+  display: flex;
+  gap: 10px;
+}
+.tending-news-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.related-news-card .right-card h4 + p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+/* --------------------------------------------------------------latest-news / and tredning secton  */
+.latest-news-card {
+  display: flex;
+  gap: 10px;
+}
+.latest-news-card img {
+  width: 250px;
+  height: 180px;
+  border-radius: 4px;
+}
+
+.latest-news-card .right-card,
+.tending-news-card .right-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tending-news-card .right-card p,
+.latest-news-card .right-card p {
+  font-size: 13px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.latest-news-card ~ .latest-news-card {
+  position: relative;
+  &::before {
+    content: "";
+    height: 11px;
+    width: 100%;
+    border-top: 2px dashed #8989899f;
+    position: absolute;
+    top: -20px;
+  }
+}
+.latest-news-card .right-card h4 + p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.latest-news-card .right-card {
+  flex-grow: 1;
+}
+/* ------------------------------------------------------------------------game seciton  */
+.game-card {
+  /* width: 40vw; */
+  border: 1px solid #898989;
+  border-radius: 5px;
+  flex-grow: 1;
+}
+
+.game-card img {
+  width: 100%;
+}
+.game-card .game-card-bottom {
+  padding: 4px 20px 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+p.time span:nth-child(2) {
+  width: 2.45px;
+  height: 13px;
+  display: inline-block;
+  margin: 0 10px;
+  background-color: #ffde00;
+}
+
+.game-section .slider.game-card-bottom {
+  border: 1px solid #898989;
+  border-radius: 5px;
+  flex-direction: column;
+  padding: 10px;
+}
+
+/* footer  */
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #272727;
+  color: white;
+  border-top: 1px solid white;
+  text-align: center;
+  padding: 30px 30px;
+  & a {
+    color: white;
+  }
+  & a:hover {
+    color: #ffde00;
+  }
+}
+
+footer .footer1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+footer .social-media {
+  display: flex;
+  gap: 20px;
+}
+footer .footer2 {
+  padding-right: 40px;
+}
+
+/*--------------------------------------------------- game detail  */
+.all-related-news-section a {
+  color: black;
+}
+.game-detail-page .left-game-detail-page-section .card {
+  background-color: white;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  height: 200px;
+}
+
+.game-detail-page .left-game-detail-page-section .card img {
+  width: 300px;
+  height: 200px;
+}
+
+.game-detail-page .left-game-detail-page-section .card .right {
+  padding: 10px;
+}
+
+.game-detail-page .left-game-detail-page-section .card .right a:first-child {
+  font-size: 20px;
+  font-weight: 900;
+  & + a p {
+    margin: 10px 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+  }
+}
+
+.game-detail-page .latest-news {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.game-detail-page .latest-news strong {
+  padding: 10px;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.349);
+  /* font-size: 20px; */
+  display: flex;
+  gap: 10px;
+}
+
+.game-detail-page .latest-news ul {
+  padding: 10px 30px 30px 30px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.715);
+}
+
+.game-detail-page .latest-news ul li + li {
+  padding: 5px 0;
+}
+.game-detail-page .latest-news ul li::marker {
+  color: #ffde00;
+}
+
+/* --------------------------------------------------------------Related News Card  */
+
+.related-news-card {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+.related-news-card img {
+  width: 100%;
+  height: 200px;
+}
+.related-news-card strong {
+  font-size: 20px;
+}
+
+.related-news-section h2 {
+  padding: 20px 0;
+  font-size: 30px;
+}
+.all-related-news-section {
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.all-related-news-section::-webkit-scrollbar {
+  display: none;
+}
+
+.related-news-card .related-news-card-bottom strong + p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}

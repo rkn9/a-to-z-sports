@@ -1,0 +1,251 @@
+@media (max-width: 1200px) {
+  .hero-section {
+    height: 50vw;
+  }
+  .trending-news {
+    flex-wrap: wrap;
+  }
+  .latest-news .about-section {
+    flex-direction: column-reverse;
+  }
+  .latest-news .about-section .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 40vw;
+  }
+  .latest-news .about-section > a {
+    width: 100%;
+  }
+  .latest-news .about-section .left {
+    width: 100%;
+  }
+  .latest-news .slider {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1100px) {
+  .tending-news-card {
+    flex-basis: 100%;
+  }
+  footer .footer1 {
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+
+  .heroSection .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 16vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .game-detail-page {
+    grid-template-columns: 100%;
+  }
+
+  .game-detail-page .left-game-detail-page-section .card .right {
+    padding: 20px;
+  }
+
+  .game-detail-page
+    .left-game-detail-page-section
+    .card
+    .right
+    a:first-child
+    + a
+    p {
+    margin: 5px 0;
+  }
+
+  .detail-page {
+    grid-template-columns: 100%;
+  }
+  .related-news-card {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .related-news-card img {
+    width: 200px;
+    height: 150px;
+  }
+  .related-news-card .all-related-news-section {
+    display: flex;
+  }
+}
+
+@media (max-width: 800px) {
+  .latest-news .slider {
+    flex-wrap: wrap;
+  }
+
+  .game-detail-page .left-game-detail-page-section .card {
+    flex-direction: column;
+    height: auto;
+  }
+  .game-detail-page .left-game-detail-page-section .card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+@media (max-width: 700px) {
+  .latest-news-card {
+    flex-direction: column;
+  }
+  .latest-news-card img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .heroSection .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 19vw;
+  }
+
+  .heroSection .swiper-pagination-bullet {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 17px;
+  }
+  .latest-news .about-section .right h3 {
+    font-size: 20px;
+  }
+  header .menu {
+    display: block;
+  }
+  /* hader */
+  header nav {
+    position: absolute;
+    /* background-color: #272727; */
+    background-color: #272727;
+    right: 0;
+    width: 100%;
+    padding: 30px 20px;
+    visibility: hidden;
+    bottom: 0;
+    flex-direction: column;
+    z-index: -1;
+    transition: 0.3s all ease-in-out;
+  }
+  header nav.toggle {
+    transform: translateY(98%);
+    visibility: visible;
+  }
+  .game-section .about-section {
+    flex-direction: column;
+  }
+  .game-card {
+    width: 100%;
+  }
+  .game-card .game-card-bottom {
+    padding: 0 10px 3px 10px;
+  }
+  footer .footer1 {
+    justify-content: center;
+    text-align: center;
+  }
+  header nav,
+  footer nav {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .categorySection > button {
+    padding: 10px 30px;
+    font-size: 15px;
+  }
+  .category-button-container h5 {
+    font-size: 13px;
+    padding: 5px 5px;
+  }
+
+  .category-button-container ul li {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  h2 {
+    padding: 10px 20px;
+  }
+
+  .hero-section .about-section {
+    bottom: 10px;
+    left: 20px;
+  }
+  .trending-news {
+    padding: 10px 20px;
+  }
+  .game-section .slider,
+  .latest-news .slider,
+  .latest-news .about-section,
+  .game-section .about-section,
+  footer,
+  header {
+    padding: 20px;
+  }
+
+  .heroSection .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 20vw;
+    left: 20px;
+  }
+
+  .heroSection .swiper-pagination-bullet {
+    height: 30px;
+    width: 30px;
+  }
+
+  p.time span {
+    font-size: 13px;
+  }
+
+  .game-detail-page {
+    padding: 20px;
+  }
+  .game-detail-page .left-game-detail-page-section .card img {
+    height: 200px;
+    object-position: top;
+  }
+
+  .detail-page {
+    padding: 0 10px;
+  }
+  .related-news-card {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .related-news-card img {
+    width: 100%;
+  }
+  .related-news-card .all-related-news-section {
+    display: flex;
+  }
+
+  .detail-page .left-detail-page .about-player {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .related-news-card img {
+    height: auto;
+  }
+}

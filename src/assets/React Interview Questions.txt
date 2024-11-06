@@ -1,0 +1,74 @@
+-----------------------------------1:React Basics- I-------------------------------
+Q1-what is react? what is the role of react in software development?
+ans-1.React is an Open Source Javascript Liberary.
+    2.React is used for building user Interfaces (UI).
+    3.React create a SPA(Single Page Application) by using reusable components.
+
+Q2-What are the key feature of React?
+ans-1.Virtual DOM
+    2.Components Based Architecture
+    3.Reusability & Composition
+    4.JSX(Javascript XML)
+    5.Declarative Systax
+    6.Community & Ecosystem
+    7.React Hooks
+
+Q2-Virtual DOM ?
+ans-React use Virtual DOM to efficiently update the UI without re-render the 
+    entire page ,which helps improve performance and make the Application
+    more responsive.
+
+Q3-DOM VS Virtual DOM
+ans-
+    DOM-1.DOM  is actual represention of web page.
+        2.Re-renders the entire page when updates occurs.
+        3.Can be slower,espcecially with frequent updates.
+        4.Suitable for static website and simple applications.
+
+    Virtual DOM-1.Virtual DOM is light weight and copy of DOM.
+                2.Re-render only the changed parts efficiently.
+                3.Optimizied the fast rendering.
+                4.Ideal for dynamic and complex single-page applications with frequent updates.
+
+Q4-What is React Components?
+ans-In React,a components is a reusable building block for creating user interfaces.
+
+Q5-What is SPA(Single Page Application)?
+ans-A Single Page Application (SPA) is a web application that only one single web page.
+   -Whenever user do some action on the website,then in response content is dynamically updated
+    without refershing or loading a new page.
+
+Q6-5 Advantages of React 
+ans-1.simple to build single page application (by using Components)
+    2.React is cross Plateform and open Source (Free to use)
+    3.Lightweight and very fast (Virtual DOM)
+    4.Large Community and Ecosystem
+    5.Testing is easy
+
+Q6-Disadvantages of React 
+ans-1.We are not use React in Simple and small Webpage like Static content wali website
+
+Q7-What is the role of JSX in React ?
+ans-JSX Stands for Javascript XML
+
+Q8-What is the Difference Declarative and Imperative syntax?
+ans- In Declarative we return simple html
+     but in imperative we return js code
+
+Q9-Arrow Function Expression vs Regular Function Declaration?
+ans- Arrow Function Expression: Const fun =()=>{
+    return (
+        <>
+        <div>jai baba ki</div>
+        </>
+      )
+    },
+    Regular Function Declaration:  function fun(){
+    return (
+        <>
+        <div>jai baba ki</div>
+        </>
+      )
+    }
+
+Q10- 
