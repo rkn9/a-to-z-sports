@@ -2,7 +2,7 @@
 const nextConfig = {
   images: {
     domains: ["atoz.gocoolcare.com", "s3-alpha-sig.figma.com"],
-    unoptimized: true,
+    unoptimized: false,
   },
 };
 
