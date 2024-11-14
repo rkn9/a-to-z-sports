@@ -26,6 +26,7 @@ function Categorys({ categoryValue, setCategoryValue }) {
 
   const trendingCategory = data?.filter((data) => data.is_trending == true);
   const featuredSports = data?.filter((data) => data.is_trending == false);
+  // console.log(trendingCategory);
 
   return (
     <>
@@ -41,7 +42,7 @@ function Categorys({ categoryValue, setCategoryValue }) {
           <ul>
             {trendingCategory?.map((item, id) => (
               <li key={id}>
-                <Link href={`/${item.slug}`}>{item.category}</Link>
+                <Link href={`/${item.category}`}>{item.category}</Link>
               </li>
             ))}
           </ul>
@@ -55,7 +56,7 @@ function Categorys({ categoryValue, setCategoryValue }) {
             {featuredSports?.map((item, id) => (
               <li key={id}>
                 <PiCricketFill color="#000000dc" />
-                <Link href={`/${item.slug}`}> {item.category}</Link>
+                <Link href={`/${item.category}`}> {item.category}</Link>
               </li>
             ))}
           </ul>

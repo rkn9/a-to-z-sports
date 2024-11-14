@@ -9,12 +9,14 @@ import { useDispatch, useSelector } from "react-redux";
 
 function page({ params }) {
   const data = useSelector((data) => data.AllNewsSlice.news.news);
+  const decodedUrl = decodeURIComponent(params.category);
+
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getAllNews());
   }, [dispatch]);
-  console.log(params.category);
-  const news = data?.filter((data) => data.category == params.category);
+  const news = data?.filter((data) => data.category == decodedUrl);
+
   const latestNews = data?.slice(data.length - 3, data.length);
 
   return (
@@ -22,7 +24,7 @@ function page({ params }) {
       <div className="game-detail-page-heading">
         <Link href="/">Home</Link>
         <FaChevronRight color="#ffd900" />
-        <Link href="#">{params.category}</Link>
+        <Link href="#">{decodedUrl}</Link>
       </div>
       <div className="game-detail-page">
         <div className="left-game-detail-page-section grow">

@@ -4,7 +4,6 @@ import Heading from "@/components/Heading";
 
 function HomeFeatureCategory({ res, categoryData }) {
   categoryData = categoryData?.filter((data) => data.add_page == true);
-  console.log(categoryData, "ss");
 
   return (
     <>
