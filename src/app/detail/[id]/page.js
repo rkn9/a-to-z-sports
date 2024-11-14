@@ -73,11 +73,17 @@ function page({ params }) {
             </div>
             <div className="input-comment">
               <div className="img">
-                <Image
+                {/* <Image
                   src="https://s3-alpha-sig.figma.com/img/87c7/b64d/4ad94c5d57e2fbf1f4ab06ee8bf16fd1?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bJif3ARfEmlp1sukfPnEqjQEVgOVXCNfWF4WZjICVyPEJYscflq7j0Bb8ZAzS3Vkf6Vc-OOaY0DLS39f3P6GCbIDPnENg5gjOJawv5smOyLqVjlw-bfNCkL8kLZIlByg7GJl0zICx2cKhoAr9lgX-y2Fa49rqNYppS7PuMRzLEgoZ8e80G4QnFHyHeHNGkwQ12axGJRbpocyYANPtdEIix7Iqhd2pM8shClszCgXH5msVUfYLHpHZGC8cEeb2F4-JgcN~xDwE1CbHZMTIs8pB9mbU9~gPj4D7jh9KPaEsTjbiW33fGU1zn78~6le3fBY0jVtIuEy5Sm3btf26ocybA__"
                   alt="logo"
                   width={100}
                   height={50}
+                /> */}
+                <Image
+                  src="https://t4.ftcdn.net/jpg/00/65/77/27/240_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg"
+                  width={100}
+                  height={50}
+                  alt="logo"
                 />
               </div>
               <textarea
